@@ -1,0 +1,272 @@
+/* Importar tipografía Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+html {
+    user-select: none;
+    position: absolute;
+    right: 100px;
+    bottom: 30px;
+}
+
+body {
+    display: none;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+}
+
+/* Títulos */
+h3, h4, h5 {
+    font-weight: 500;
+    color: white;
+    margin-left: 6px;
+}
+
+h3 {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+h4 {
+    margin: 0 0 0 2px;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+h5 {
+    line-height: 10px;
+    margin: 0 0 0 2px;
+    font-size: 9px;
+}
+
+/* Contenedor principal */
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 410px;
+    width: 320px;
+    background-color: #2c2c2c;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    border:5px  solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    width: 100%;
+    background-color: #1d1d1d;
+    color: #C3072F;
+    padding-left: 1px;
+    border-bottom: 4px solid #C3072F;
+    text-transform: uppercase;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.work{
+    padding-left: 100px;
+}
+
+.exit {
+    position: absolute;
+    margin-top: 3px;
+    right: 20px;
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    transition: all 0.1s linear;
+    font-weight: bold;
+}
+
+.exit:hover {
+    cursor: pointer;
+    color: #C3072F;
+    transform: scale(1.1);
+}
+
+.exit:active {
+    color: #ff304e;
+    transform: scale(0.95);
+}
+
+.icon {
+    font-size: 19px;
+    color: #C3072F;
+}
+
+.red-bar {
+    width: 5px;
+    height: 100%;
+    background-color: #C3072F;
+    margin-right: 13px;
+}
+
+/* Off Duty */
+.off-duty {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 40px;
+    background-color: #1f1f1f;
+    margin: 10px auto;
+    align-items: center;
+    border-radius: 7px;
+    
+}
+
+.off-duty > div {
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+}
+
+.off-duty > .button {
+    margin-right: 13px;
+    text-transform: uppercase;
+}
+
+/* Jobs container */
+.jobs-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 95%;
+    overflow-y: hidden;
+    margin: 0 auto 10px auto;
+    border-radius: 7px;
+}
+
+.jobs-container > ::-webkit-scrollbar {
+    width: 6px;
+}
+
+.jobs-container > ::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.jobs-container > ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+
+.jobs-container > ::-webkit-scrollbar-thumb:hover {
+    background: lightgray; 
+}
+
+.jobs {
+    display: grid;
+    background-color: #1f1f1f;
+    overflow-y: scroll;
+    padding-top: 6px;
+    
+}
+
+.jobs div:last-of-type {
+    margin-bottom: 0;
+}
+
+.jobs-container > .grey-bar {
+    position: relative;
+    min-height: 10px;
+    width: 100%;
+    background-color: #1f1f1f;
+}
+
+/* Job Item */
+.job {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 10px 10px;
+    height: 40px;
+    min-height: 40px;
+    background-color: #2c2c2c;
+    border-radius: 7px;
+    transition: background 0.15s ease, border-left 0.15s ease;
+    
+}
+
+.job:hover {
+    border: 2px solid red;
+}
+
+
+
+.job > div {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.badge-info {
+    padding-left: 13px;
+    
+}
+
+.money-select {
+    padding-left: 0;
+}
+
+.job-selectButton {
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.job-icon {
+    color: white;
+    font-size: 13px;
+}
+
+.job-info {
+    margin-left: 3px;
+
+    text-transform: uppercase;
+}
+
+/* Botones */
+.button {
+    width: 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C3072F;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    height: 25px;
+    transition: all 0.1s linear;
+    text-transform: uppercase;
+}
+
+.half-button {
+    width: 26px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C3072F;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    height: 25px;
+    transition: all 0.1s linear;
+}
+
+.button:hover, .half-button:hover {
+    cursor: pointer;
+    background-color: #ff304e;
+}
+
+.button:active, .half-button:active {
+    background-color: #C3072F;
+    transform: scale(0.95);
+}
+
+.button > i {
+    color: white;
+    font-size: 15px;
+}
