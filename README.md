@@ -10,9 +10,13 @@ oxmysql – puente veloz y seguro hacia tu base de datos.
 Ejecuta este script para preparar tu tabla de empleos (con clave compuesta para evitar duplicados):
 
 CREATE TABLE IF NOT EXISTS player_jobs (
+
     cid   VARCHAR(100) NOT NULL,
+    
     job   VARCHAR(100) NOT NULL,
+    
     grade INT(11)      NOT NULL,
+    
     PRIMARY KEY (cid, job)
 );
 
