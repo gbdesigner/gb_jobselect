@@ -9,7 +9,7 @@ oxmysql – puente veloz y seguro hacia tu base de datos.
 # 🛠️ Migración instantánea
 Ejecuta este script para preparar tu tabla de empleos (con clave compuesta para evitar duplicados):
 
-CREATE TABLE IF NOT EXISTS player_jobs (
+    CREATE TABLE IF NOT EXISTS player_jobs (
 
     cid   VARCHAR(100) NOT NULL,
     
@@ -18,7 +18,8 @@ CREATE TABLE IF NOT EXISTS player_jobs (
     grade INT(11)      NOT NULL,
     
     PRIMARY KEY (cid, job)
-);
+    
+    );
 
 # 🌐 Únete a la comunidad
 Descubre más recursos forjados para servidores colombianos – diseños, scripts y apoyo en vivo – en nuestro Discord:
