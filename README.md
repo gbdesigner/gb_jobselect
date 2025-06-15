@@ -3,6 +3,7 @@ Un susurro de libertad en tu servidor QBCore: permite que cada jugador salte con
 
 # ⚙️ Dependencias imprescindibles
 qb-core – el latido de tu framework.
+
 oxmysql – puente veloz y seguro hacia tu base de datos.
 
 # 🛠️ Migración instantánea
